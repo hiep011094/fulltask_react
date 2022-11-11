@@ -64,13 +64,13 @@ const Edit = () => {
         formatData.append("file_old", file_old)
         formatData.append("file", file)
 
-        const res1 = await axios.post('/api/v1/upload_avatar', formatData, {
+        const res1 = await axios.post('/fulltask_react/api/v1/upload_avatar', formatData, {
           headers: { Authorization: token }
         })
         avatar = res1.data.url;
       }
 
-      const res = await axios.patch('/api/v1/user/update', {
+      const res = await axios.patch('/fulltask_react/api/v1/user/update', {
         name: input.name,
         phone: input.phone,
         address: input.address,

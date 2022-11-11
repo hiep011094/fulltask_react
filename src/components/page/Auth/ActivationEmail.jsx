@@ -13,7 +13,7 @@ const ActivationEmail = ({handleBtnAuth}) => {
         if (activation_token) {
             const activationEmail = async () => {
                 try {
-                    const res = await axios.post('/fulltask_react/api/v1/user/activate', { activation_token })
+                    const res = await axios.post('/api/v1/user/activate', { activation_token })
                     setSuccsess(res.data.msg)
                 } catch (error) {
                     error.response.data.msg && setErr(error.response.data.msg)

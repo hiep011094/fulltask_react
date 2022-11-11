@@ -9,7 +9,7 @@ export const dispatchLogin = () =>{
 
 export const fetchUser = async (token) =>{
 
-    const res = await axios.get('/fulltask_react/api/v1/user/infor',{
+    const res = await axios.get('/api/v1/user/infor',{
         headers: {Authorization: token}
     })
 

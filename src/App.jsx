@@ -33,7 +33,7 @@ function App() {
     const firstLogin = localStorage.getItem('firstLogin')
     if (firstLogin) {
       const getToken = async () => {
-        const res = await axios.post('/fulltask_react/api/v1/user/refresh_token', null)
+        const res = await axios.post('/api/v1/user/refresh_token', null)
         dispatch({ type: "GET_TOKEN", payload: res.data.access_token })
       }
       getToken()

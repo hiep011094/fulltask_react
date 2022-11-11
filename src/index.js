@@ -7,14 +7,13 @@ import DataProvider from "./redux/store";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
-      <DataProvider>
+    <DataProvider>
+      <HashRouter>
         <BrowserRouter>
-
           <App />
         </BrowserRouter>
-      </ DataProvider>
-    </HashRouter>
+      </HashRouter>
+    </ DataProvider>
 
   </React.StrictMode>,
   document.getElementById("root")

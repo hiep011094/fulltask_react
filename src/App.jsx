@@ -55,6 +55,7 @@ function App() {
     <div className="app">
 
       <Header handleBtnAuth={handleBtnAuth} />
+      
       <Routes>
         <Route path='/*' element={<NotFound />} />
         <Route path="/" element={<Home />} />

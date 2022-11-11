@@ -8,8 +8,8 @@ export const dispatchLogin = () =>{
 }
 
 export const fetchUser = async (token) =>{
-
-    const res = await axios.get('https://react-mern123.herokuapp.com/api/v1/user/infor',{
+    axios.defaults.baseURL = 'https://react-mern123.herokuapp.com'
+    const res = await axios.get('/api/v1/user/infor',{
         headers: {Authorization: token}
     })
 

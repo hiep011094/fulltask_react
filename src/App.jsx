@@ -32,10 +32,13 @@ function App() {
   useEffect(() => {
     const firstLogin = localStorage.getItem('firstLogin')
     if (firstLogin) {
+      
       const getToken = async () => {
-        const res = await axios.post('https://react-mern123.herokuapp.com/api/v1/user/refresh_token', null)
+        const res = await axios.post('/api/v1/user/refresh_token', null)
+        console.log(res.data.access_token);
         dispatch({ type: "GET_TOKEN", payload: res.data.access_token })
       }
+      
       getToken()
     }
   }, [auth.isLogged, dispatch])

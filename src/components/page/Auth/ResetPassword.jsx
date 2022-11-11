@@ -35,7 +35,7 @@ const ResetPassword = () => {
             return setShowMessge({ ...showMessge, err: "Confirm password is not correct" })
 
         try {
-            const res = await axios.post('/api/v1/user/reset', {password},{
+            const res = await axios.post('/fulltask_react/api/v1/user/reset', {password},{
                 headers: { Authorization: reset_token }
             })
             setShowMessge((e) => ({

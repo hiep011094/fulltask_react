@@ -63,13 +63,13 @@ const Edit = () => {
         let formatData = new FormData()
         formatData.append("file_old", file_old)
         formatData.append("file", file)
-        axios.defaults.baseURL = 'https://react-mern123.herokuapp.com'
+        
         const res1 = await axios.post('/api/v1/upload_avatar', formatData, {
           headers: { Authorization: token }
         })
         avatar = res1.data.url;
       }
-      axios.defaults.baseURL = 'https://react-mern123.herokuapp.com'
+      
       const res = await axios.patch('/api/v1/user/update', {
         name: input.name,
         phone: input.phone,

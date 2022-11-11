@@ -39,7 +39,7 @@ const Header = ({ handleBtnAuth }) => {
 
   const handleLogout = async () => {
     try {
-      axios.defaults.baseURL = 'https://react-mern123.herokuapp.com'
+      
       await axios.get('/api/v1/user/logout')
       localStorage.removeItem('firstLogin')
       window.location.href = "/"

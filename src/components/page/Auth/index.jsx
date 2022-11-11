@@ -34,7 +34,7 @@ const Auth = ({ isBtnAuth, handleBtnAuth }) => {
     const handleLoginSubmit = async (e) => {
         e.preventDefault()
         try {
-            axios.defaults.baseURL = 'https://react-mern123.herokuapp.com'
+            
             const res = await axios.post('/api/v1/user/login', { email, password })
             setUser({ ...user, err: '', success: res.data.msg })
 
@@ -60,7 +60,7 @@ const Auth = ({ isBtnAuth, handleBtnAuth }) => {
             return setUser({ ...user, err: "Password did not match.", success: '' })
 
         try {
-            axios.defaults.baseURL = 'https://react-mern123.herokuapp.com'
+            
             const res = await axios.post('/api/v1/user/register', {
                 name, email, password
             })

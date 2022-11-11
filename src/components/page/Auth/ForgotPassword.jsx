@@ -24,7 +24,7 @@ const ForgotPassword = () => {
         e.preventDefault()
         const email = e.target.email.value;
         try {
-            axios.defaults.baseURL = 'https://react-mern123.herokuapp.com'
+            
             const res = await axios.post('/api/v1/user/forgot', {email})
             setShowMessge((e) => ({
                 e,

@@ -13,7 +13,7 @@ const ActivationEmail = ({handleBtnAuth}) => {
         if (activation_token) {
             const activationEmail = async () => {
                 try {
-                    axios.defaults.baseURL = 'https://react-mern123.herokuapp.com'
+                    
                     const res = await axios.post('/api/v1/user/activate', { activation_token })
                     setSuccsess(res.data.msg)
                 } catch (error) {

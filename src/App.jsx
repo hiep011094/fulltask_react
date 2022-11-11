@@ -33,7 +33,7 @@ function App() {
     const firstLogin = localStorage.getItem('firstLogin')
     if (firstLogin) {
       const getToken = async () => {
-        const res = await axios.post('/api/v1/user/refresh_token', null)
+        const res = await axios.post('https://react-mern123.herokuapp.com/api/v1/user/refresh_token', null)
         dispatch({ type: "GET_TOKEN", payload: res.data.access_token })
       }
       getToken()

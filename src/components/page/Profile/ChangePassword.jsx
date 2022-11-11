@@ -34,7 +34,7 @@ const ChangePassword = () => {
       return setShowMessge({ ...showMessge, err: "Confirm password is not correct" })
 
     try {
-      const res = await axios.patch('/api/v1/user/update_password', { curent_password, password }, {
+      const res = await axios.patch('https://react-mern123.herokuapp.com/api/v1/user/update_password', { curent_password, password }, {
         headers: { Authorization: token }
       })
       setShowMessge((e) => ({

@@ -35,7 +35,7 @@ const ResetPassword = () => {
             return setShowMessge({ ...showMessge, err: "Confirm password is not correct" })
 
         try {
-            const res = await axios.post('/api/v1/user/reset', {password},{
+            const res = await axios.post('https://react-mern123.herokuapp.com/api/v1/user/reset', {password},{
                 headers: { Authorization: reset_token }
             })
             setShowMessge((e) => ({

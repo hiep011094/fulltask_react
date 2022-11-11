@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hiep011094.github.io/fulltask_react",
+  "homepage": "https://636de8f427c9c816dd55a1b5--keen-syrniki-fa13a7.netlify.app/",
   "dependencies": {
     "axios": "^0.27.2",
     "react": "^16.14.0",

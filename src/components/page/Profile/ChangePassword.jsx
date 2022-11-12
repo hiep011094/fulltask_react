@@ -35,7 +35,7 @@ const ChangePassword = () => {
 
     try {
       
-      const res = await axios.patch('/api/v1/user/update_password', { curent_password, password }, {
+      const res = await axios.patch('/fulltask_react/api/v1/user/update_password', { curent_password, password }, {
         headers: { Authorization: token }
       })
       setShowMessge((e) => ({

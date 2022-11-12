@@ -25,7 +25,7 @@ const ForgotPassword = () => {
         const email = e.target.email.value;
         try {
             
-            const res = await axios.post('/api/v1/user/forgot', {email})
+            const res = await axios.post('/fulltask_react/api/v1/user/forgot', {email})
             setShowMessge((e) => ({
                 e,
                 success: res.data.msg && (res.data.msg)

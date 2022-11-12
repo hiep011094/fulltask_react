@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fulltask_react/static/css/main.07fd3abd.css",
-    "main.js": "/fulltask_react/static/js/main.75b2aa1f.js",
+    "main.js": "/fulltask_react/static/js/main.d40e1987.js",
     "static/media/img_news02.webp": "/fulltask_react/static/media/img_news02.b752c58705b554c40aa1.webp",
     "static/media/img_news01.webp": "/fulltask_react/static/media/img_news01.728f64fbf10ed7552a02.webp",
     "static/media/img_banner01.webp": "/fulltask_react/static/media/img_banner01.c0c3301b2015f5c99e31.webp",
@@ -36,10 +36,10 @@
     "static/media/img_logo_white.webp": "/fulltask_react/static/media/img_logo_white.3fdb2d3fcc19e7a962e3.webp",
     "static/media/icon_01.webp": "/fulltask_react/static/media/icon_01.eb90b7160fcdb47efa81.webp",
     "main.07fd3abd.css.map": "/fulltask_react/static/css/main.07fd3abd.css.map",
-    "main.75b2aa1f.js.map": "/fulltask_react/static/js/main.75b2aa1f.js.map"
+    "main.d40e1987.js.map": "/fulltask_react/static/js/main.d40e1987.js.map"
   },
   "entrypoints": [
     "static/css/main.07fd3abd.css",
-    "static/js/main.75b2aa1f.js"
+    "static/js/main.d40e1987.js"
   ]
 }

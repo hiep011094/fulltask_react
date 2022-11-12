@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://hiep011094.github.io/fulltask_react/",
   "dependencies": {
+    "@vitejs/plugin-react": "^2.2.0",
     "axios": "^0.27.2",
     "http-proxy-middleware": "^2.0.6",
     "react": "^16.14.0",
@@ -16,6 +17,7 @@
     "redux": "^4.2.0",
     "sass": "^1.56.1",
     "slick-carousel": "^1.8.1",
+    "vite": "^3.2.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,5 +48,6 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  }
+  },
+  "proxy": "https://react-mern123.herokuapp.com/"
 }

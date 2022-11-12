@@ -40,7 +40,7 @@ const Header = ({ handleBtnAuth }) => {
   const handleLogout = async () => {
     try {
       
-      await axios.get('/fulltask_react/api/v1/user/logout')
+      await axios.get('/api/v1/user/logout')
       localStorage.removeItem('firstLogin')
       window.location.href = "/"
     } catch (err) {

@@ -22,7 +22,17 @@ function App() {
   const handleBtnAuth = (is) => {
     setIsBtnAuth(is)
   }
-
+  useEffect(()=>{
+    const func = async() =>{
+        try {
+            const res =  await axios.get("/api/v1/user/logout")
+            console.log(res)
+         } catch (error) {
+             console.log(error)
+         }
+    }
+    func()
+},[])
   const dispatch = useDispatch()
 
   const token = useSelector(state => state.token)
@@ -34,7 +44,7 @@ function App() {
     if (firstLogin) {
       const getToken = async () => {
         
-        const res = await axios.post('/fulltask_react/api/v1/user/refresh_token', null)
+        const res = await axios.post('/api/v1/user/refresh_token', null)
         dispatch({ type: "GET_TOKEN", payload: res.data.access_token })
       }
       getToken()

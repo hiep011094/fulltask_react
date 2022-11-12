@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import axios from "axios";
@@ -18,6 +18,7 @@ const initialState = {
 }
 
 const Auth = ({ isBtnAuth, handleBtnAuth }) => {
+    
 
     const [user, setUser] = useState(initialState)
 
@@ -35,7 +36,7 @@ const Auth = ({ isBtnAuth, handleBtnAuth }) => {
         e.preventDefault()
         try {
             
-            const res = await axios.post('/fulltask_react/api/v1/user/login', { email, password })
+            const res = await axios.post('/api/v1/user/login', { email, password })
             setUser({ ...user, err: '', success: res.data.msg })
 
             localStorage.setItem('firstLogin', true)
@@ -61,7 +62,7 @@ const Auth = ({ isBtnAuth, handleBtnAuth }) => {
 
         try {
             
-            const res = await axios.post('/fulltask_react/api/v1/user/register', {
+            const res = await axios.post('/api/v1/user/register', {
                 name, email, password
             })
 

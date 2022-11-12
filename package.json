@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hiep011094.github.io/fulltask_react/",
+  "homepage": "https://hiep011094.github.io/fulltask_react",
   "dependencies": {
     "@vitejs/plugin-react": "^2.2.0",
     "axios": "^0.27.2",
@@ -48,6 +48,5 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  },
-  "proxy": "https://react-mern123.herokuapp.com/"
+  }
 }

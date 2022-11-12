@@ -22,17 +22,17 @@ function App() {
   const handleBtnAuth = (is) => {
     setIsBtnAuth(is)
   }
-  useEffect(()=>{
-    const func = async() =>{
-        try {
-            const res =  await axios.get("/api/v1/user/logout")
-            console.log(res)
-         } catch (error) {
-             console.log(error)
-         }
-    }
-    func()
-},[])
+//   useEffect(()=>{
+//     const func = async() =>{
+//         try {
+//             const res =  await axios.get("/api/v1/user/logout")
+//             console.log(res)
+//          } catch (error) {
+//              console.log(error)
+//          }
+//     }
+//     func()
+// },[])
   const dispatch = useDispatch()
 
   const token = useSelector(state => state.token)

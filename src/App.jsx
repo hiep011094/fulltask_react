@@ -25,7 +25,7 @@ function App() {
 //   useEffect(()=>{
 //     const func = async() =>{
 //         try {
-//             const res =  await axios.get("/api/v1/user/logout")
+//             const res =  await axios.get("https://react-mern123.herokuapp.com/api/v1/user/logout")
 //             console.log(res)
 //          } catch (error) {
 //              console.log(error)
@@ -43,8 +43,9 @@ function App() {
     const firstLogin = localStorage.getItem('firstLogin')
     if (firstLogin) {
       const getToken = async () => {
+        axios.defaults.withCredentials = true
         
-        const res = await axios.post('/api/v1/user/refresh_token', null)
+        const res = await axios.post('https://react-mern123.herokuapp.com/api/v1/user/refresh_token', null)
         dispatch({ type: "GET_TOKEN", payload: res.data.access_token })
       }
       getToken()
